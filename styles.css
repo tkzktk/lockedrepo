@@ -1,0 +1,242 @@
+table {
+     border: 1px solid #000;
+     border-collapse: collapse;
+     border-color:black;
+     margin: 0;
+     padding: 0;
+     width: 35%;
+     table-layout: fixed;
+     margin-left:auto;
+     margin-right:auto;
+     font-family: 'Quattrocento', serif;
+}
+ button {
+     background-color:transparent;
+     border-style: solid;
+     border-width:1px;
+     border-color:black;
+     font-family: 'Quattrocento', serif;
+}
+ table caption {
+     font-size: 1.5em;
+     margin: .5em 0 .75em;
+}
+ table tr {
+     background-color: #f8f8f8;
+     border: 1px solid #000;
+     padding: .35em;
+}
+ table th, table td {
+     padding: .625em;
+     text-align: center;
+}
+ table th {
+     font-size: .85em;
+     letter-spacing: .1em;
+}
+ @media screen and (max-width: 600px) {
+     table {
+         border: 0;
+    }
+     table caption {
+         font-size: 1.3em;
+    }
+     table thead {
+         border: none;
+         clip: rect(0 0 0 0);
+         height: 1px;
+         margin: -1px;
+         overflow: hidden;
+         padding: 0;
+         position: absolute;
+         width: 1px;
+    }
+     table tr {
+         border-bottom: 3px solid #000;
+         display: block;
+         margin-bottom: .625em;
+    }
+     table td {
+         border-bottom: 1px solid #000;
+         display: block;
+         font-size: .8em;
+         text-align: right;
+    }
+     table td::before {
+        /* * aria-label has no advantage, it won't be read inside a table content: attr(aria-label);
+         */
+         content: attr(data-label);
+         float: left;
+         font-weight: bold;
+         text-transform: uppercase;
+    }
+     table td:last-child {
+         border-bottom: 0;
+    }
+}
+/* general styling */
+ body {
+     font-family: 'Quattrocento', serif;
+     line-height: 1.25;
+}
+ .popup {
+     display: none;
+     position: fixed;
+     padding: 10px;
+     width: 280px;
+     left: 50%;
+     margin-left: -150px;
+     height: 200px;
+     top: 50%;
+     margin-top: -100px;
+     background: #FFF;
+     border: 3px solid #F04A49;
+     z-index: 20;
+}
+ #popup:after {
+     position: fixed;
+     content: "";
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     background: rgba(0,0,0,0.5);
+     z-index: -2;
+}
+ #popup:before {
+     position: absolute;
+     content: "";
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     background: #FFF;
+     z-index: -1;
+}
+/* Styling buttons & webpage */
+ body {
+     background: offwhite;
+     font-family: 'Quattrocento', serif;
+     text-align: center;
+}
+ button {
+}
+ button:hover {
+     transition: all 0.3s ease 0s;
+}
+ .popup3, .popup2, .popup1, #popup3, #popup2, #popup1 {
+     display: none;
+     position: fixed;
+     padding: 30px;
+     width: 285px;
+     left: 50%;
+     height: 350px;
+     top: 50%;
+     margin-top: -100px;
+     background: #FFF;
+     border: 3px solid #000;
+     z-index: 20;
+     text-align: left;
+}
+ .popup3:after, .popup2:after, .popup1:after, #popup3:after, #popup2:after, #popup1:after {
+     position: fixed;
+     content: "";
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     background: rgba(0,0,0,0.5);
+     z-index: -2;
+}
+ .popup3:before, .popup2:before, .popup1:before, #popup3:before, #popup2:before, #popup1:before {
+     position: absolute;
+     content: "";
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     background: #FFF;
+     z-index: -1;
+}
+/* Styling buttons & webpage */
+ body {
+     background: offwhite;
+     font-family: 'Quattrocento', serif;
+     text-align: center;
+}
+ button {
+}
+ button:hover {
+     transition: all 0.3s ease 0s;
+}
+ .close, #close{
+     text-align:right;
+}
+ footer{
+     margin-top: 2.5rem;
+}
+ .faq-section {
+     max-width: 760px;
+     margin: 0 auto;
+     margin-top: 2rem;
+}
+ header {
+     margin-bottom: 70px;
+}
+ header > p {
+     font-size: 22px;
+     color: #000;
+}
+ h2 {
+     text-align: left;
+     font-size: 52px;
+     color: #000;
+     margin-top: 40px;
+     margin-bottom: 20px;
+     font-weight: bold;
+}
+ h4 {
+     text-align: left;
+}
+ details {
+     cursor: pointer;
+}
+ summary:focus-visible {
+     outline: 2px solid orange;
+     outline-offset: 8px;
+     border-radius: 4px;
+}
+ h4 {
+     width: 760px;
+}
+ summary {
+     font-size: 18px;
+     color: #000;
+     display: flex;
+     justify-item: space-between;
+     align-items: center;
+     width: 85%;
+     margin-right: auto;
+     margin-left: auto;
+}
+ summary::marker {
+     display: none;
+     content: "";
+}
+ span {
+     margin-top: 4px;
+     color: #000;
+}
+ details > p {
+     max-width: 650px;
+     color: #000;
+     font-size: 18px;
+     line-height: 155%;
+     letter-spacing: .1px;
+     margin-bottom: 40px;
+     padding-left: 10px;
+}
+ hr {
+     color: #000;
+     margin-block: 20px;
+}
