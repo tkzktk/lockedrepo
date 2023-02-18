@@ -131,7 +131,7 @@ table {
      width: 285px;
      left: 50%;
      height: 350px;
-     top: 50%;
+     top: 25%;
      margin-top: -100px;
      background: #FFF;
      border: 3px solid #000;
@@ -173,7 +173,7 @@ table {
      text-align:right;
 }
  footer{
-     margin-top: 2.5rem;
+     margin-top: 2rem;
 }
  .faq-section {
      max-width: 760px;
